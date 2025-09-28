@@ -21,6 +21,9 @@ echo "Área del círculo: $area<br><br>";
 $valor1 = 8;
 $valor2 = 3;
 
+echo "valor1: $valor1<br>";
+echo "valor2: $valor2<br>";
+
 // + suma
 $suma = $valor1 + $valor2;
 
@@ -36,14 +39,14 @@ $cociente = $valor1 / $valor2;
 // % resto de la división entera (módulo)
 $resto = $valor1 % $valor2;
 
-// ++ incremento en 1
+// ++ incremento en 1 (EN LA ORIGINAL)
 $incremento = $valor1++;
 
 // -- decremento en 1
 $decremento = $valor2--;
 
-echo "valor1: $valor1<br>";
-echo "valor2: $valor2<br>";
+
+
 echo "suma: $suma<br>";
 echo "resta: $resta<br>";
 echo "producto: $producto<br>";
