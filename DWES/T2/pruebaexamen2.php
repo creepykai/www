@@ -11,3 +11,4 @@
     echo $c, "<br>"; //Intenta imprimir $c, pero dará un error porque $c ha sido eliminada
     echo $ref, "<br>"; //Imprime el valor de $ref, que sigue existiendo aunque $c ha sido eliminada
 ?> //Se cierra el bloque PHP
+
