@@ -1,11 +1,10 @@
 <?php
-include("header.php")
+$title = "Index";
+include("header.php");
 ?>
-<html>
-    <head>
-        <title>Index</title>
-    </head>
-    <body>
-        Hola mundo
-    </body>
+<title><?php echo $title;?></title>
+</head>
+<body>
+    Hola mundo
+</body>
 </html>
