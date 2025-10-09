@@ -165,3 +165,5 @@ $server = new StandardServer([
   'schema' => $schema,                 
   'rootValue' => $root_fields_Resolver 
 ]);
+
+$server->handleRequest();
