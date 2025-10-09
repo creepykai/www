@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload – Diapositivas 7–9</title>
+</head>
+<body>
+  <h1>Subir un archivo</h1>
+
+  <!-- enctype obligatorio para enviar binarios -->
+  <form action="subir.php" method="post" enctype="multipart/form-data">
+    <!-- MAX_FILE_SIZE (opcional) ayuda al navegador a limitar tamaño antes del envío -->
+    <input type="hidden" name="MAX_FILE_SIZE" value="3000000"> <!-- ~3 MB -->
+    <p>
+      Selecciona archivo: 
+      <input type="file" name="fichero" required>
+    </p>
+    <button type="submit">Subir</button>
+  </form>
+</body>
+</html>
