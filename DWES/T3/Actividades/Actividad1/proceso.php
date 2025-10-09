@@ -1,5 +1,5 @@
 <?php
-$nom = $_GET['nombre'] ?? ''; /*Si se usa _REQUEST cambiando el metodo (que por defecto es get)*/
+$nom = $_GET['nombre'] ?? ''; /* Si se usa $_REQUEST cambiando el método (que por defecto es GET) */
 $ape = $_GET['apellido'] ?? '';
 $dir = $_GET['direccion'] ?? '';
 $tlf = $_GET['telefono'] ?? '';
@@ -12,17 +12,24 @@ $tlf = $_GET['telefono'] ?? '';
         <title>Actividad 1</title>
     </head>
     <body>
+        <h1>Datos recibidos</h1>
         <table>
             <tr>
                 <th>Nombre</th>
-                <th>apellido</th>
+                <th>Apellido</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
             </tr>
             <tr>
-                <td><?=$nom?></td>
-                <td><?=$ape?></td>
-
+                <td><?= $nom ?></td>
+                <td><?= $ape ?></td>
+                <td><?= $dir ?></td>
+                <td><?= $tlf ?></td>
             </tr>
         </table>
+    </body>
+</html>
+
 
 
 
