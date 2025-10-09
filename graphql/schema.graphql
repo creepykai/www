@@ -1,3 +1,4 @@
 type Query{
     hello: String!
 }
+#El cliente puede hacer una consulta llamada hello, que devuelve un texto (String).
