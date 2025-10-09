@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Diapositiva 2 - Controles de formulario</title>
+</head>
+<body>
+  <h1>Diapositiva 2 - Ejemplo de varios tipos de controles</h1>
+
+  <form method="get" action="procesar.php">
+
+    <label>Nombre:
+      <input type="text" name="nombre" required>
+    </label><br>
+
+    <label>Edad:
+      <input type="number" name="edad" min="1" max="120" required>
+    </label><br>
+
+    <p>Género:</p>
+    <label><input type="radio" name="genero" value="Femenino" required> Femenino</label><br>
+    <label><input type="radio" name="genero" value="Masculino"> Masculino</label><br>
+    <label><input type="radio" name="genero" value="Otro"> Otro</label><br>
+
+    <p>País:</p>
+    <select name="pais">
+      <option value="España">España</option>
+      <option value="México">México</option>
+      <option value="Argentina">Argentina</option>
+    </select><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
