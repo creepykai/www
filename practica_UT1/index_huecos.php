@@ -3,7 +3,10 @@ require_once __DIR__ . '/../../../vendor/autoload.php';
 
 use GraphQL\Type\Definition\Type;
 use GraphQL\Type\Definition\ObjectType;
-// COMPLETA CON LAS CLASES FALTANTES
+use GraphQL\Type\Schema;
+use GraphQL\Type\StandardServer;
+use GraphQL\Type\Definition\InterfaceType;
+
 
 $authors = [
     ['firstName' => 'Miguel', 'lastName' => 'de Cervantes'],
