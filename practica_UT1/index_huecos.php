@@ -169,8 +169,6 @@ $server = new StandardServer([
   'rootValue' => $rootValue
 ]);
 
-$server->handleRequest();
-
 try {
     $server->handleRequest();
 }
