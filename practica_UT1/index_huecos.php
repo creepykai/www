@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../../../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 use GraphQL\Type\Definition\Type;
 use GraphQL\Type\Definition\ObjectType;
@@ -77,7 +77,7 @@ class PublisherType extends ObjectType {
     }
 }
 
-class LibItemInterface extends ObjectType {
+class LibItemInterface extends InterfaceType {
     public function __construct() {
         parent::__construct([
             'name' => 'LibItem',
@@ -166,7 +166,14 @@ $schema = new Schema([
 
 $server = new StandardServer([
   'schema' => $schema,                 
-  'rootValue' => $root_fields_Resolver 
+  'rootValue' => $rootValue
 ]);
 
 $server->handleRequest();
+
+try {
+    $server->handleRequest();
+}
+catch (Exception $e) {
+    echo json_encode(['error' => $e->getMessage()]);
+}
