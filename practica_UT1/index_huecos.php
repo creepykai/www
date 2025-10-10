@@ -4,7 +4,7 @@ require_once __DIR__ . '/../../../vendor/autoload.php';
 use GraphQL\Type\Definition\Type;
 use GraphQL\Type\Definition\ObjectType;
 use GraphQL\Type\Schema;
-use GraphQL\Type\StandardServer;
+use GraphQL\Server\StandardServer;
 use GraphQL\Type\Definition\InterfaceType;
 
 
