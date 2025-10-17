@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Raleway:wght@400;600&display=swap');
+
+body {
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 2.8em;
+    color: #b98aff;
+    text-shadow: 0 0 10px #6b00b3;
+    margin-bottom: 25px;
+}
+
+p {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+#resultado {
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #6a0dad;
+}
+
+#resultado button {
+    background-color: #4b0082;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 15px;
+}
+
+#resultado button:hover {
+    background-color: #6a0dad;
+    transform: scale(1.05);
+}
+
+#resultado img {
+    border-radius: 10px;
+    max-width: 320px;
+    height: auto;
+}
