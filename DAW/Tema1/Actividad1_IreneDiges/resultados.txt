@@ -1,4 +1,7 @@
 Irene;2025-10-13 17:04:28;muerto
+Irene;2025-10-13 17:25:37;vivo
+Irene;2025-10-13 17:26:19;vivo
+Irene;2025-10-13 17:26:32;muerto
 Irene;2025-10-14 11:32:15;vivo
 Irene;2025-10-14 18:47:02;muerto
 Irene;2025-10-15 09:56:41;vivo
@@ -10,3 +13,6 @@ Irene;2025-10-17 14:12:59;vivo
 Irene;2025-10-17 16:55:03;vivo
 Irene;2025-10-17 17:09:02;muerto
 Maria Angeles;2025-10-17 17:10:52;muerto
+Alonso;2025-10-17 17:14:11;muerto
+Irene;2025-10-17 17:15:20;muerto
+
