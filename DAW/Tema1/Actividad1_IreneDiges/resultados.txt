@@ -15,4 +15,7 @@ Irene;2025-10-17 17:09:02;muerto
 Maria Angeles;2025-10-17 17:10:52;muerto
 Alonso;2025-10-17 17:14:11;muerto
 Irene;2025-10-17 17:15:20;muerto
-
+Irene;2025-10-17 17:32:12;vivo
+Irene;2025-10-17 17:32:54;vivo
+Alonso;2025-10-17 17:33:02;vivo
+Alonso;2025-10-18 23:52:32;muerto

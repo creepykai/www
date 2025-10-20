@@ -35,12 +35,10 @@
         return; 
       }
 
-      // Determinar aleatoriamente el estado del gato
       const vivo = Math.random() >= 0.5;
       const resultado = vivo ? 'VIVO' : 'MUERTO';
       document.getElementById('imagen').src = vivo ? 'gato_vivo.png' : 'gato_fantasma.png';
 
-      // Guardar los datos en el servidor
       const datos = new FormData();
       datos.append("usuario", usuario);
       datos.append("estado", resultado.toLowerCase());
@@ -50,7 +48,6 @@
         .then(texto => console.log("Servidor:", texto))
         .catch(err => console.error("Error al guardar:", err));
 
-      // Mostrar confirmación en pantalla
       alert(`El gato está ${resultado}. Se ha guardado el resultado.`);
     }
   </script>
