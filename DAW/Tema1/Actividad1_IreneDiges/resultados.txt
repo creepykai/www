@@ -19,3 +19,7 @@ Irene;2025-10-17 17:32:12;vivo
 Irene;2025-10-17 17:32:54;vivo
 Alonso;2025-10-17 17:33:02;vivo
 Alonso;2025-10-18 23:52:32;muerto
+Irene;2025-10-20 17:55:26;muerto
+Irene;2025-10-20 18:17:01;vivo
+Irene;2025-10-20 18:17:50;vivo
+Irene;2025-10-20 18:18:23;muerto

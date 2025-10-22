@@ -14,41 +14,33 @@
   Solo tú puedes romper la incertidumbre. ¿Te atreves a abrir la caja y descubrir su destino?</p>
 
   <div id="resultado">
-    <div style="margin-bottom:12px">
-      <label for="usuario" style="display:block;margin-bottom:6px;color:#111">Usuario</label>
-      <input id="usuario" type="text" placeholder="Tu nombre" style="padding:8px 10px;border-radius:6px;border:1px solid #bbb;width:220px">
-    </div>
+    <form id="formulario" action="server.php" method="POST">
+      <div class="campo-usuario">
+        <label for="usuario">Usuario</label>
+        <input id="usuario" name="usuario" type="text" placeholder="Tu nombre" required maxlength="50">
+      </div>
 
-    <button onclick="abrir_caja()">Abrir la caja</button>
+      <input type="hidden" id="estado" name="estado">
+      <button type="button" onclick="abrir_caja()">Abrir la caja</button>
+    </form>
+
     <img id="imagen" src="caja_de_schrödinger.png" alt="Caja de Schrödinger" width="300">
 
-    <div style="margin-top:14px">
-      <a href="historial.php" style="margin-left:8px;display:inline-block">Ver historial</a>
+    <div class="historial">
+      <a href="historial.php">Ver historial</a>
     </div>
   </div>
 
   <script>
     function abrir_caja() {
       const usuario = document.getElementById('usuario').value.trim();
-      if (!usuario) { 
-        alert('Introduce tu nombre antes de abrir la caja.'); 
-        return; 
-      }
+      if (!usuario) return alert('Introduce tu nombre antes de abrir la caja.');
 
       const vivo = Math.random() >= 0.5;
-      const resultado = vivo ? 'VIVO' : 'MUERTO';
+      const resultado = vivo ? 'vivo' : 'muerto';
       document.getElementById('imagen').src = vivo ? 'gato_vivo.png' : 'gato_fantasma.png';
-
-      const datos = new FormData();
-      datos.append("usuario", usuario);
-      datos.append("estado", resultado.toLowerCase());
-
-      fetch("server.php", { method: "POST", body: datos })
-        .then(res => res.text())
-        .then(texto => console.log("Servidor:", texto))
-        .catch(err => console.error("Error al guardar:", err));
-
-      alert(`El gato está ${resultado}. Se ha guardado el resultado.`);
+      document.getElementById('estado').value = resultado;
+      document.getElementById('formulario').submit();
     }
   </script>
 </body>
