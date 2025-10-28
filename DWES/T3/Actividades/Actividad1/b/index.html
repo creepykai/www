@@ -7,26 +7,34 @@
 <body>
   <h1>Calculadora</h1>
 
+  <!-- Enviamos al archivo PHP de proceso por GET -->
   <form action="proceso.php" method="GET">
+    <!-- Número 1 -->
     <p>
-      <label for="n1">Número 1:</label>
-      <input type="number" name="n1" id="n1" required>
+      <label for="numero1">Número 1:</label>
+      <!-- name = numero1  (debe coincidir con proceso.php) -->
+      <input type="number" name="numero1" id="numero1" required>
     </p>
 
+    <!-- Número 2 -->
     <p>
-      <label for="n2">Número 2:</label>
-      <input type="number" name="n2" id="n2" required>
+      <label for="numero2">Número 2:</label>
+      <!-- name = numero2 -->
+      <input type="number" name="numero2" id="numero2" required>
     </p>
 
+    <!-- Elección de operación: un único name para agrupar los radios -->
     <fieldset>
       <legend>Operación</legend>
-      <label><input type="radio" name="op" value="add" required> Suma (+)</label><br>
-      <label><input type="radio" name="op" value="sub"> Resta (−)</label><br>
-      <label><input type="radio" name="op" value="mul"> Multiplicación (×)</label><br>
-      <label><input type="radio" name="op" value="div"> División (÷)</label><br>
-      <label><input type="radio" name="op" value="mod"> Módulo (%)</label>
+      <!-- name = operacion; value indica cuál -->
+      <label><input type="radio" name="operacion" value="add" required> Suma (+)</label><br>
+      <label><input type="radio" name="operacion" value="sub"> Resta (−)</label><br>
+      <label><input type="radio" name="operacion" value="mul"> Multiplicación (×)</label><br>
+      <label><input type="radio" name="operacion" value="div"> División (÷)</label><br>
+      <label><input type="radio" name="operacion" value="mod"> Módulo (%)</label>
     </fieldset>
 
+    <!-- Enviar -->
     <p>
       <button type="submit">Calcular</button>
     </p>

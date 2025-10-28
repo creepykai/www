@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formatos en Texto</title>
+  <style>
+    body {
+      background-color: #d9e6e6;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 16px;
+    }
+    .contenedor {
+      background-color: #ffffff;
+      width: 600px;
+      margin: 0 16px;
+      padding: 16px;
+      border: 1px solid #cccccc;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      resize: none;
+    }
+    fieldset {
+      margin-top: 12px;
+      border: 1px solid #bfbfbf;
+    }
+    legend {
+      padding: 0 6px;
+      font-weight: bold;
+    }
+    label {
+      display: inline-block;
+      width: 80px;
+      margin-top: 10px;
+    }
+    .fila {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+    }
+    .boton {
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formatos en Texto</h1>
+
+  <div class="contenedor">
+    <form action="proceso.php" method="GET">
+
+      <label for="texto">Texto:</label><br>
+      <textarea name="texto" id="texto" required></textarea><br><br>
+
+      <fieldset>
+        <legend>Características del borde</legend>
+
+        <label for="tam">Tamaño:</label>
+        <select name="tam" id="tam">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select><br><br>
+
+        <div class="fila">
+          <div>
+            <label for="estilo">Estilo:</label>
+            <select name="estilo" id="estilo">
+              <option value="none">Oculto</option>
+              <option value="solid">Liso</option>
+              <option value="double">Doble</option>
+              <option value="dotted">Punteado</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="color">Color:</label>
+            <select name="color" id="color">
+              <option value="black">Negro</option>
+              <option value="red">Rojo</option>
+              <option value="blue">Azul</option>
+              <option value="yellow">Amarillo</option>
+            </select>
+          </div>
+        </div>
+
+      </fieldset>
+
+      <input type="submit" value="Enviar" class="boton">
+
+    </form>
+  </div>
+
+</body>
+</html>
