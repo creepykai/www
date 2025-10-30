@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 3.7 - Funciones numéricas</title>
+</head>
+<body>
+  <h1>Calculadora de funciones numéricas</h1>
+
+  <form action="proceso.php" method="GET">
+    <p>
+      <label for="numero">Número entero:</label>
+      <input type="number" name="numero" id="numero" required>
+    </p>
+
+    <fieldset>
+      <legend>Elige una función:</legend>
+      <label><input type="radio" name="funcion" value="opuesto" required> Opuesto (-n)</label><br>
+      <label><input type="radio" name="funcion" value="inverso"> Inverso (1/n)</label><br>
+      <label><input type="radio" name="funcion" value="cuadrado"> Cuadrado (n²)</label><br>
+      <label><input type="radio" name="funcion" value="raiz"> Raíz cuadrada (√n)</label><br>
+      <label><input type="radio" name="funcion" value="sumatorio"> Sumatorio (1+2+...+n)</label><br>
+      <label><input type="radio" name="funcion" value="factorial"> Factorial (n!)</label>
+    </fieldset>
+
+    <p><button type="submit">Calcular</button></p>
+  </form>
+</body>
+</html>

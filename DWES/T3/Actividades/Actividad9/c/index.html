@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividad 3.9(c) - Formulario</title>
+</head>
+<body>
+  <h1>Formulario con varios controles</h1>
+  <form method="GET" action="proceso.php">
+    <p>
+      <label>Nombre: <input type="text" name="nombre" required></label>
+    </p>
+    <p>
+      <label>Email: <input type="email" name="email" required></label>
+    </p>
+    <p>
+      Sexo:
+      <label><input type="radio" name="sexo" value="Mujer" required> Mujer</label>
+      <label><input type="radio" name="sexo" value="Hombre"> Hombre</label>
+    </p>
+    <p>
+      Intereses:<br>
+      <label><input type="checkbox" name="intereses[]" value="Deporte"> Deporte</label>
+      <label><input type="checkbox" name="intereses[]" value="Música"> Música</label>
+      <label><input type="checkbox" name="intereses[]" value="Arte"> Arte</label>
+    </p>
+    <p>
+      Provincia:
+      <select name="provincia">
+        <option>Guadalajara</option>
+        <option>Madrid</option>
+        <option>Toledo</option>
+      </select>
+    </p>
+    <p>
+      Comentarios:<br>
+      <textarea name="comentarios" rows="3" cols="40"></textarea>
+    </p>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
