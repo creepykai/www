@@ -1,0 +1,41 @@
+input[type=radio]#avatar {
+	position:absolute; opacity: 0; width: 0; height: 0;
+}
+input[type=radio]#avatar:checked + img {
+	outline: 2px solid #f00;
+}
+
+body {
+    padding-top: 120px;   
+    padding-bottom: 60px;
+}
+
+a:link,a:visited,a:hover,a:active {
+	padding: 5px;
+	text-decoration: none;
+	color: #000000;
+}
+
+a.btn {
+	color: inherit !important; 
+}
+  
+a.btn:hover {
+	color: #fff !important; 
+}
+
+table, th, td {
+	border: 1px slod black;
+	border-collapse: collapse;
+}
+tr.list_header {
+	background-color:#888;
+	color:white
+}
+
+tr.list_even {
+	background-color:#DDD;
+}
+td { 
+	width: 80px; text-align: center; 
+}
