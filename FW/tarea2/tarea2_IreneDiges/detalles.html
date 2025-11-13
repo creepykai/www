@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles - Reservia</title>
+
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+    <header class="bg-white border-bottom">
+        <div class="container d-flex align-items-center justify-content-between  py-3">
+            <div class="d-flex align-items-center gap-4">
+                <img src="imagenes/logo.webp" alt="Logo Reservia" class="logo-thumb">
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link text-secondary menu-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-secondary menu-link">Explorar</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-secondary menu-link">Mis reservas</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-secondary menu-link">Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <div class="input-group w-auto" role="search">
+                    <span class="input-group-text bg-white border-end-0">
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input class="form-control border-start-0" type="search" placeholder="Buscar">
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="imagenes/user.png" alt="Avatar" class="avatar-thumb rounded-circle">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="my-4"></div>
+
+    <main class="container">
+        <section class="mb-5 vh-35">
+            <div class="row g-3 h-100">
+                <div class="col-lg-8 h-100">
+                    <div class="ratio ratio-16x9 overflow-hidden rounded  h-100">
+                        <img src="imagenes/hoteles/7.png" alt="Imagen principal" class="object-fit-fill w-100 h-100">
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex flex-column gap-2 h-100">
+                    <div class="ratio ratio-16x9  overflow-hidden rounded h-100">
+                        <img src="imagenes/hoteles/19_1.jpg" alt="Habitación 1" class="object-fit-fill w-100 h-100">
+                    </div>
+                    <div class="ratio ratio-16x9 overflow-hidden rounded h-100">
+                        <img src="imagenes/hoteles/19_2.jpg" alt="Habitación 2" class="object-fit-fill w-100 h-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="d-flex">
+                <article class="mb-5 col-8">
+                    <h1 class="h2 fw-bold mb-3">The Grand Oasis Resort</h1>
+                    <p class="text-muted mb-4">
+                        Ubicado en el corazón de la ciudad, The Grand Oasis Resort ofrece una experiencia de lujo con
+                        impresionantes vistas,
+                        comodidades de clase mundial y un servicio impecable. Perfecto para viajeros de negocios y de
+                        placer.
+                    </p>
+
+                    <div class="mb-4">
+                        <h4 class="h5 fw-semibold mb-3">Servicios</h4>
+                        <div class="row row-cols-2 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div class="d-flex align-items-center gap-2 border border-end-1 shadow-sm rounded px-2 p-2">
+                                    <i class="fas fa-swimming-pool text-primary"></i>
+                                    <span class="text-muted">Piscina</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex align-items-center gap-2 border border-end-1 shadow-sm rounded px-2 p-2">
+                                    <i class="fas fa-wifi text-primary"></i>
+                                    <span class="text-muted">Wifi gratis</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex align-items-center gap-2 border border-end-1 shadow-sm rounded px-2 p-2">
+                                    <i class="fas fa-parking text-primary"></i>
+                                    <span class="text-muted">Estacionamiento</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex align-items-center gap-2 border border-end-1 shadow-sm rounded px-2 p-2">
+                                    <i class="fas fa-utensils text-primary"></i>
+                                    <span class="text-muted">Restaurante</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex align-items-center gap-2 border border-end-1 shadow-sm rounded px-2 p-2">
+                                    <i class="fas fa-spa text-primary"></i>
+                                    <span class="text-muted">Spa</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex align-items-center gap-2 border border-end-1 shadow-sm rounded px-2 p-2">
+                                    <i class="fas fa-dumbbell text-primary"></i>
+                                    <span class="text-muted">Gimnasio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="h5 fw-semibold mb-3">Disponibilidad de Habitaciones</h4>
+                        <div class="table-responsive">
+                            <table class="table border border-end-1 shadow-sm">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Tipo de habitación</th>
+                                        <th scope="col">Camas</th>
+                                        <th scope="col">Huéspedes</th>
+                                        <th scope="col">Precio / noche</th>
+                                        <th scope="col">Disponibilidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Habitación estándar</td>
+                                        <td>1 cama queen</td>
+                                        <td>2</td>
+                                        <td>150€</td>
+                                        <td>
+                                            <div class="badge bg-success text-white fw-semibold rounded-pill">Disponible</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Habitación de lujo</td>
+                                        <td>1 cama king</td>
+                                        <td>2</td>
+                                        <td>200€</td>
+                                        <td>
+                                            <div class="badge bg-success text-white fw-semibold rounded-pill">Disponible</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Suite</td>
+                                        <td>1 cama king, 1 sofá cama</td>
+                                        <td>4</td>
+                                        <td>300€</td>
+                                        <td>
+                                            <div class="badge bg-danger text-white fw-semibold rounded-pill">No disponible</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </article>
+
+                <aside class="col-lg-3 offset-1">
+                    <div class="bg-white p-4 rounded shadow-sm border border-end-1">
+                        <h5 class="fw-bold mb-3">Reserve su estancia</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="fecha-entrada" class="form-label">Fecha de entrada</label>
+                                <input type="date" class="form-control" id="fecha-entrada">
+                            </div>
+                            <div class="mb-3">
+                                <label for="fecha-salida" class="form-label">Fecha de salida</label>
+                                <input type="date" class="form-control" id="fecha-salida">
+                            </div>
+                            <div class="mb-3">
+                                <label for="num-huespedes" class="form-label">Número de huéspedes</label>
+                                <select class="form-select" id="num-huespedes">
+                                    <option value="1">1 persona</option>
+                                    <option value="2" selected>2 personas</option>
+                                    <option value="3">3 personas</option>
+                                    <option value="4">4 personas</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 rounded px-2">Reservar</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light border-top py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="nav d-flex gap-4 mb-0">
+                        <li class="nav-item"><a href="#" class="nav-link px-0 text-muted">Acerca de</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-0 text-muted">Soporte</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-0 text-muted">Términos y Condiciones</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 text-center mt-3">
+                    <p class="mb-0 text-muted">&copy; 2025 Reservia. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
