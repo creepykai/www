@@ -2,36 +2,38 @@
 declare(strict_types=1);
 
 /**
- * SIMULACRO EXAMEN DWES: Lotería con Persistencia (Usando Método GET)
- * * IMPORTANTE: Para peticiones GET, cambiamos $_POST por $_GET
- * 1. Formularios (GET)
- * 2. Cookies (Persistencia en cliente)
- * 3. Ficheros (Lectura y Escritura)
+ * SIMULACRO EXAMEN DWES: Lotería con Persistencia (Usando SESIONES)
+ * * DIFERENCIAS CON COOKIES:
+ * 1. Usamos session_start() al inicio.
+ * 2. Usamos $_SESSION en lugar de $_COOKIE.
  */
+
+// --- INICIO DE SESIÓN OBLIGATORIO ---
+// Debe ser la primera cosa en el script que usa sesiones (Unidad 4, Diapositiva 41)
+session_start();
 
 // --- CONFIGURACIÓN ---
 $fichero = 'ganadores.txt';
 $mensaje = '';
 $nombreUsuario = '';
 
-// --- 1. GESTIÓN DE COOKIES (Recordar Usuario) ---
+// --- 1. GESTIÓN DE SESIONES (Recordar Usuario) ---
 
-// Si el usuario envía el formulario con su nombre (ahora en $_GET)
+// Si el usuario envía el formulario con su nombre (en $_GET o $_POST, da igual ahora)
 if (isset($_GET['nombre'])) {
     $nombreUsuario = trim($_GET['nombre']);
     
-    // Guardamos la cookie para que el navegador recuerde el nombre por 1 hora
-    // setcookie(nombre, valor, caducidad)
-    setcookie('usuario', $nombreUsuario, time() + 3600); 
+    // Guardamos el nombre en la variable de Sesión. ¡El dato está en el SERVIDOR!
+    $_SESSION['usuario'] = $nombreUsuario; 
 } 
-// Si no envía formulario, miramos si ya existe la cookie guardada de antes
-elseif (isset($_COOKIE['usuario'])) {
-    $nombreUsuario = $_COOKIE['usuario'];
+// Si no envía formulario, miramos si el nombre ya está guardado en la Sesión
+elseif (isset($_SESSION['usuario'])) {
+    $nombreUsuario = $_SESSION['usuario'];
 }
 
-// --- 2. LÓGICA DEL JUEGO ---
+// --- 2. LÓGICA DEL JUEGO (MÉTODO GET) ---
 
-// Solo jugamos si se ha enviado el número y tenemos nombre (ahora en $_GET)
+// Solo jugamos si se ha enviado el número y tenemos nombre
 if (isset($_GET['numero']) && $nombreUsuario !== '') {
     
     $numeroElegido = (int) $_GET['numero'];
@@ -40,12 +42,9 @@ if (isset($_GET['numero']) && $nombreUsuario !== '') {
     if ($numeroElegido === $ganador) {
         $mensaje = "¡PREMIO! El número ganador era el $ganador.";
         
-        // --- 3. GUARDAR EN FICHERO (Persistencia en Servidor) ---
+        // --- 3. GUARDAR EN FICHERO ---
         
-        // Preparamos la línea: Nombre - Hora Fecha
         $linea = $nombreUsuario . " - " . date('H:i:s d/m/Y') . PHP_EOL;
-        
-        // Escribimos en el fichero usando FILE_APPEND para NO borrar lo anterior
         file_put_contents($fichero, $linea, FILE_APPEND);
 
     } else {
@@ -57,9 +56,7 @@ if (isset($_GET['numero']) && $nombreUsuario !== '') {
 
 $listaGanadores = [];
 
-// Comprobamos si existe el fichero antes de intentar leerlo
 if (file_exists($fichero)) {
-    // file() es muy útil: lee todo el fichero y devuelve un array (cada línea es un elemento)
     $listaGanadores = file($fichero);
 }
 
@@ -69,7 +66,7 @@ if (file_exists($fichero)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotería DWES - Método GET</title>
+    <title>Lotería DWES - Sesiones</title>
     <style>
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
@@ -120,7 +117,7 @@ if (file_exists($fichero)) {
 <body>
 
     <div class="container">
-        <h1>🎲 Lotería del Examen (Método GET)</h1>
+        <h1>🎲 Lotería del Examen (Método GET con SESIÓN)</h1>
 
         <!-- Mensaje de resultado (si existe) -->
         <?php if ($mensaje): ?>
@@ -129,9 +126,9 @@ if (file_exists($fichero)) {
             </div>
         <?php endif; ?>
 
-        <!-- !!! CAMBIO CRÍTICO: method="GET" !!! -->
         <form method="GET" action="index.php">
             <label for="nombre">Nombre del Jugador:</label>
+            <!-- El nombre viene de la sesión -->
             <input type="text" id="nombre" name="nombre" 
                    value="<?= htmlspecialchars($nombreUsuario) ?>" 
                    required placeholder="Tu nombre aquí...">
