@@ -1,0 +1,8 @@
+body {
+    display: grid;
+    place-content: center;
+}
+
+table {
+    border: 2px solid red;
+}

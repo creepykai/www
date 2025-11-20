@@ -1,0 +1,2 @@
+php_value auto_pretend_file "/var/www/html/Servidor/Tema3/Actividades/3.4/inc/header.php"
+php_value auto_append_file "/var/www/html/Servidor/Tema3/Actividades/3.4/inc/footer.php"
