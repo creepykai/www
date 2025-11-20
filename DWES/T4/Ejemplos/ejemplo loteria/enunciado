@@ -1,0 +1,12 @@
+Ejercicio: "La Lotería Persistente"
+Objetivo:
+
+El usuario introduce su Nombre y un Número (1-5).
+
+COOKIE: Si el usuario ya introdujo su nombre antes, el campo "Nombre" debe aparecer relleno automáticamente (recordamos quién es).
+
+LÓGICA: Generamos un número aleatorio. Si acierta, gana.
+
+FICHERO: Si gana, guardamos su nombre y fecha en ganadores.txt.
+
+VISTA: Mostramos la lista de todos los ganadores históricos.
