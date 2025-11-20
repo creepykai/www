@@ -1,0 +1,5 @@
+Utiliza cookies para almacenar el número de visitas realizadas desde una máquina en cualquiera de las actividades anteriores.
+Añade un contador de visitas en la página para comprobar que la cookie funciona correctamente
+y que mantiene la información aunque se cierre el navegador.
+Utiliza el número de visitas para mostrar una imagen que vaya cambiando con cada nueva visita
+de forma cíclica.

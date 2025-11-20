@@ -1,0 +1,6 @@
+Para comenzar muestra en pantalla:
+
+-Tres cartas en orden aleatorio, por ejemplo, as,dos y tres.
+-Un botón para barajar las cartas.
+
+Cuando el jugador pulse este botón las cartas se barajarán y mostrarán boca abajo en pantalla para que el jugador
