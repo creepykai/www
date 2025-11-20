@@ -1,0 +1,9 @@
+ a. Crea un formulario HTML que solicite al usuario que introduzca una serie de
+ valores: nombre, apellidos, dirección y teléfono, y envía dichos datos a un
+ archivo PHP que recogerá los valores y los mostrará en pantalla en una tabla.
+ 
+ b. Crea un formulario HTML que recoja dos valores numéricos a través de
+ cuadros de texto y permita seleccionar una operación matemática entre:
+ suma, resta, multiplicación, división y módulo. Envía los valores a un archivo
+ PHP que realizará la operación indicada entre los dos números y mostrará en
+ pantalla el resultado.

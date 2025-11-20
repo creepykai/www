@@ -1,0 +1,5 @@
+Para comenzar muestra en pantalla
+ ◦ Tres cartas en orden aleatorio, por ejemplo, as, dos y tres.
+ ◦ Unbotón para barajar las cartas.
+ Cuando el jugador pulse este botón las cartas serán barajadas y mostradas boca a abajo en
+ pantalla para que el jugador trate de averiguar dónde se encuentra el as.

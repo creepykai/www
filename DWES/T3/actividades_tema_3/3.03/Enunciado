@@ -1,0 +1,8 @@
+ Crea un formulario HTML que recoja un texto a
+ través de un cuadro de texto y las características del
+ borde: estilo (liso, doble, punteado u oculto),
+ tamaño en pixeles (entre 0 y 10) y color (negro, rojo,
+ azul o amarillo).
+ Envía los valores a un archivo PHP y muestra el texto
+ en un cuadro con las características establecidas en
+ el formulario.

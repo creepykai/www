@@ -1,0 +1,10 @@
+a. Crea un formulario HTML que recoja los datos de un pedido para una tienda online que
+ vende 3 tipos de artículos. El formulario deberá recoger el número de unidades solicitadas
+ de cada tipo. Recoge los valores y genera una factura en la que se indiquen las unidades
+ vendidas de cada uno de los artículos, su precio unitario (5.99€, 12.49€ y 19.99€
+ respectivamente), subtotal por artículo e importe total aplicando un 20% de IVA. Usa alguna
+ función que te permita incluir la fecha de emisión de la factura.
+
+ b.  Modifica la tabla anterior de manera que se haga un descuento en función del número total
+ de unidades vendidas. En la factura se deberá mostrar tanto el porcentaje de descuento
+ comosu valor en euros
