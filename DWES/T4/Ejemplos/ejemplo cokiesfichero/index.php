@@ -8,7 +8,7 @@ $visitas = 0; // Valor por defecto si no hay archivo
 // Usamos file_exists (Pág. 24)
 if (file_exists($fichero)) {
     // 2. Leer el contenido actual
-    // file_get_contents devuelve un string (Pág. 15)
+    // file_get_contents devuelve un string
     $contenido = file_get_contents($fichero);
     
     // Casting a int para poder sumar matemáticamente
