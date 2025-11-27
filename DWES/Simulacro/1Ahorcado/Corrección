@@ -1,0 +1,14 @@
+1- Requisitos: 
+
+$_GET['player'] -> nombre del jugador
+$_GET['words'] -> array de palabras
+$_GET['contador_intentos'] -> contador de intentos -> const  MAX_INTENTOS = 10; -> imagenes
+$end = FALSE; -> Será true en caso de que intentos = 10 o La palabra ha sido completada o Finalizar ($_GET['fin'])
+$_GET['letras'] -> array de letras que elimina las ya usadas - $_GET['acertado'] 
+$_GET['puntuacion'] -> 
+
+Cosas del examen: hidden en el t3 y cookies en el t4
+
+Usar un phtml += para crear el html.
+
+
