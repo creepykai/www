@@ -1,0 +1,31 @@
+REGISTRO DE CAMBIOS - P_UT4_DIGES_IRENE
+=======================================
+
+VERSIÓN 1.0 - Estructura y Maquetación
+--------------------------------------
+- Creación de la estructura de directorios: separación de lógica en carpeta 'inc/'.
+- Definición de plantillas HTML5 con Bootstrap 5 para header.php y footer.php.
+- Creación de model.php inicial con arrays estáticos para simular datos.
+- Implementación del estilo visual personalizado (paleta morada/negra) en styles.css.
+
+VERSIÓN 2.0 - Gestión de Sesiones
+---------------------------------
+- Implementación de session_start() en header.php para mantener el estado.
+- Desarrollo de la lógica de Login y Logout sin uso de bases de datos.
+- Control de acceso: bloqueo de pestañas 'Jugar' y 'Editar' para usuarios no identificados.
+- Restricción de rol: 'Editar Preguntas' visible exclusivamente para el usuario 'elchokas'.
+
+VERSIÓN 3.0 - Lógica de Juego y Perfil
+--------------------------------------
+- Perfil: Formulario de edición con precarga de datos del usuario logueado.
+- Validación: Uso de Expresiones Regulares (Regex) en el servidor para validar teléfono y correo.
+- Juego: Algoritmo para selección aleatoria de preguntas sin repetición.
+- Puntuación: Sistema de rachas (potencias de 2) y Bonus final (+100 puntos).
+
+VERSIÓN 4.0 - Persistencia de Datos (Final)
+-------------------------------------------
+- Migración del modelo: Sustitución de arrays estáticos por lectura/escritura de ficheros.
+- Implementación de funciones para leer y guardar en 'jugadores.csv', 'preguntas.txt' y 'partidas.csv'.
+- Rutas: Uso de rutas absolutas (__DIR__) para garantizar la carga de archivos en cualquier entorno.
+- Ranking Dinámico: Cálculo de 'Mejores Jugadores' basado en el histórico real de partidas.csv.
+- Depuración final: Corrección de errores de cabeceras y validación de tipos.
