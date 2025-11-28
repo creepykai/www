@@ -1,0 +1,6 @@
+¿Capital de España?;Madrid;Barcelona;Sevilla;Geografía;1
+¿Cuánto es 2 + 2?;Tres;Cuatro;Cinco;Matemáticas;2
+¿De qué color es el caballo blanco de Santiago?;Blanco;Negro;Marrón;Lógica;1
+¿Cuál es un lenguaje de servidor?;HTML;CSS;PHP;Informática;3
+¿Qué pesa más: un kilo de hierro o de paja?;Hierro;Paja;Igual;Lógica;3
+erwer;1;3;2;3;1

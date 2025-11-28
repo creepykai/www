@@ -1,0 +1,40 @@
+PROYECTO: Juego de Preguntas (DWES UT2-UT4)
+ALUMNA: Irene Diges
+ASIGNATURA: Desarrollo Web en Entorno Servidor
+ENTREGA: P_UT4_DIGES_IRENE
+
+--- REQUISITOS DEL SISTEMA ---
+1. Servidor Web (Apache) con soporte PHP (XAMPP, LAMP, MAMP o similar).
+2. Permisos de lectura y escritura en la carpeta del proyecto.
+
+--- INSTALACIÓN Y DESPLIEGUE ---
+1. Descomprimir el archivo ZIP llamado "P_UT4_DIGES_IRENE.zip".
+2. Copiar la carpeta resultante dentro del directorio raíz del servidor web:
+   - En XAMPP: C:\xampp\htdocs\
+   - En Linux: /var/www/html/
+3. Asegurarse de que el usuario del servidor web tiene permisos de ESCRITURA en los archivos de datos situados en la raíz:
+   - jugadores.csv
+   - preguntas.txt
+   - partidas.csv
+   - paises.txt
+
+--- ACCESO A LA APLICACIÓN ---
+1. Abrir un navegador web.
+2. Ir a la dirección (dependiendo del nombre de la carpeta extraída): 
+   http://localhost:8080/P_UT4_DIGES_IRENE/index.php
+
+--- USUARIOS DE PRUEBA ---
+La aplicación cuenta con usuarios preconfigurados en 'jugadores.csv':
+
+A Rol Administrador (Único con permiso para Editar Preguntas):
+   - Usuario: elchokas
+   - Contraseña: chocas
+
+B Rol Jugador Normal:
+   - Usuario: mochi
+   - Contraseña: 1234
+   * También se puede registrar un usuario nuevo desde la pestaña "Perfil" sin estar logueado.
+
+--- NOTAS ADICIONALES ---
+- Las imágenes de los avatares (avatar1.png y avatar2.png) se encuentran en la raíz del proyecto.
+- La aplicación utiliza sesiones PHP para mantener el estado; asegúrese de que las cookies están habilitadas.
