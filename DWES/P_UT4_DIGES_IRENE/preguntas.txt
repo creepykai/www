@@ -3,4 +3,5 @@
 ¿De qué color es el caballo blanco de Santiago?;Blanco;Negro;Marrón;Lógica;1
 ¿Cuál es un lenguaje de servidor?;HTML;CSS;PHP;Informática;3
 ¿Qué pesa más: un kilo de hierro o de paja?;Hierro;Paja;Igual;Lógica;3
-erwer;1;3;2;3;1
+¿4+5?;3;8;9;Matemáticas;3
+¿En que año se lanzó warframe?;2000;2005;2013;Historia;3
