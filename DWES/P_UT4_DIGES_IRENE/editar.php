@@ -65,7 +65,7 @@ if (isset($_GET['guardar_pregunta'])) {
 //Si el usuario no es admin, se muestra un mensaje de acceso denegado
 if (!$esAdmin) {
     echo "<h2>Acceso denegado</h2>";
-    echo "<p>No tienes permisos de administrador para acceder a esta sección. Solo el usuario 'elchocas' puede editar preguntas.</p>";
+    echo "<p>No tienes permisos de administrador para acceder a esta sección. Solo el usuario 'elchokas' puede editar preguntas.</p>";
 } else {
     
     $accion = $idPregunta !== null ? "Editar Pregunta #$idPregunta" : "Añadir Nueva Pregunta";

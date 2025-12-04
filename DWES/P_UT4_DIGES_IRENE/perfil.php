@@ -119,8 +119,7 @@ if (!empty($errores)) {
     <div class="col-md-6">
         <label for="telefono" class="form-label">Teléfono</label>
         <input type="text" class="form-control" id="telefono" name="telefono"
-               value="<?php echo htmlspecialchars($datosPerfil['telefono'] ?? ''); ?>"
-        >
+               value="<?php echo htmlspecialchars($datosPerfil['telefono'] ?? ''); ?>">
     </div>
     
     <div class="col-md-6">
