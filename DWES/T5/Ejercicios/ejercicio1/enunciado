@@ -1,0 +1,9 @@
+Define una clase llamada Titulo cuyos atributos son: texto, posición (con el dominio
+centro, izquierda,derecha),colortexto y colorfondo.
+
+Al crear un objeto de la clase Titulo, se asignarán los valores por defecto que son: "" (cadena
+vacía), centro, negro y blanco respectivamente.
+
+Añade métodos para poder modificar y obtener los valores de todas sus propiedades a través de
+un comportamiento único, y otro método para obtener las propiedades de esta clase de forma
+textual al intentar imprimirla.

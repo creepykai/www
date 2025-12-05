@@ -1,0 +1,22 @@
+Define una clase Empleado con dos atributos públicos nombre y sueldo. Añade un
+constructor que funcione con 0, 1 y 2 parámetros:
+ ◦ 0 parámetros. Se creará un empleado genérico llamado "EmpleadoX", donde X es el número de
+empleado, valor que se irá incrementando con cada nueva creación de un empleado sin nombre. Su
+sueldo será 555, valor genérico.
+ ◦ 1parámetro. Se comprobará si el valor pasado es textual o numérico, y será asignado respectivamente a
+ nombre o asueldo. El otro atributo se completará con el valor genérico correspondiente.
+ ◦ 2 parámetros. Se comprobará que el primer parámetro es textual o numérico, en cuyo caso se asignará
+ cada valor al atributo correspondiente.
+ ◦ Si se recibe un número de parámetros diferente o los parámetros no tienen los tipos establecidos se trabajará como si no se
+ hubiera recibido ningún parámetro.
+
+ Añade un método que permita clonar un objeto para que el empleado clon mantenga el
+ sueldo del original, cuyo sea el que le corresponda siguiendo la numeración de los
+ empleados genéricos.
+ Añade métodos mágicos getter y setter.
+ ◦ El getter devolverá el valor del atributo recibido como parámetro, comprobando previamente si
+ existe el atributo. Si no existe devolverá "null".
+ ◦ El setter establecerá un valor para atributo recibido como primer parámetro, comprobando si el
+ atributo existe y el valor del segundo parámetro concuerda con el tipo del atributo.
+ Crea varios objetos con todas las posibles combinaciones y comprueba que los atributos
+ reciben los valores de forma correcta.
