@@ -11,15 +11,19 @@ class animal{
     }
 
     public function comer(){
-        echo "El animal come.";
+        echo "El animal come. <br/>";
     }
 
     public function dormir(){
-        echo "El animal duerme.";
+        echo "El animal duerme. <br/>";
     }
 
     public function hacerRuido(){
-        echo "El animal hace ruido.";
+        echo "El animal hace ruido. <br/>";
+    }
+
+    public function __toString(){
+        return "El animal se llama " . $this->nombre . " y tiene " . $this->edad . " años. <br/>";
     }
 }
 
@@ -32,15 +36,15 @@ class perro extends animal{ //extends es la palabra clave para la herencia
     }
 
     public function comer(){ //Se sobreescribe el metodo comer para que sea diferente al de la clase padre
-        echo "El perro come.";
+        echo "El perro come. <br/>";
     }
 
     public function dormir(){ //Se sobreescribe el metodo dormir para que sea diferente al de la clase padre
-        echo "El perro duerme.";
+        echo "El perro duerme. <br/>";
     }
 
     public function hacerRuido(){ //Se sobreescribe el metodo hacerRuido para que sea diferente al de la clase padre
-        echo "El perro ladra.";
+        echo "El perro ladra. <br/>";
     }
 }
 
@@ -53,14 +57,28 @@ class pajaro extends animal{ //extends es la palabra clave para la herencia
     }
 
     public function comer(){ //Se sobreescribe el metodo comer para que sea diferente al de la clase padre o hermana
-        echo "El pajaro come.";
+        echo "El pajaro come. <br/>";
     }
 
     public function dormir(){ //Se sobreescribe el metodo dormir para que sea diferente al de la clase padre o hermana
-        echo "El pajaro duerme.";
+        echo "El pajaro duerme. <br/>";
     }
 
     public function hacerRuido(){ //Se sobreescribe el metodo hacerRuido para que sea diferente al de la clase padre o hermana
-        echo "El pajaro canta.";
+        echo "El pajaro canta. <br/>";
     }
 }
+
+$perro = new perro("Rex", 2, "Macho", "Pastor Aleman");
+$pajaro = new pajaro("Piolin", 1, "Hembra", "Rojo");
+
+$perro->comer();
+$perro->dormir();
+$perro->hacerRuido();
+
+$pajaro->comer();
+$pajaro->dormir();
+$pajaro->hacerRuido();
+
+echo $perro;
+echo $pajaro;
