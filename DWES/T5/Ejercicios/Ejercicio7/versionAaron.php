@@ -31,6 +31,7 @@ class EmpleadoModificado extends Empleado {
 
 
 class Becario extends Empleado {
+    
 
 }
 
