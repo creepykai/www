@@ -1,0 +1,26 @@
+[
+  { "id": 1,   "name_en": "Bulbasaur", "name_jp": "フシギダネ",   "name_es": "Bulbasaur", "generation": 1, "is_baby": false, "is_legendary": false },
+  { "id": 2,   "name_en": "Ivysaur",   "name_jp": "フシギソウ",   "name_es": "Ivysaur",   "generation": 1, "is_baby": false, "is_legendary": false },
+  { "id": 3,   "name_en": "Venusaur",  "name_jp": "フシギバナ",   "name_es": "Venusaur",  "generation": 1, "is_baby": false, "is_legendary": false },
+
+  { "id": 133, "name_en": "Eevee",     "name_jp": "イーブイ",     "name_es": "Eevee",     "generation": 1, "is_baby": false, "is_legendary": false },
+  { "id": 134, "name_en": "Vaporeon",  "name_jp": "シャワーズ",   "name_es": "Vaporeon",  "generation": 1, "is_baby": false, "is_legendary": false },
+  { "id": 135, "name_en": "Jolteon",   "name_jp": "サンダース",   "name_es": "Jolteon",   "generation": 1, "is_baby": false, "is_legendary": false },
+  { "id": 136, "name_en": "Flareon",   "name_jp": "ブースター",   "name_es": "Flareon",   "generation": 1, "is_baby": false, "is_legendary": false },
+  { "id": 196, "name_en": "Espeon",  "name_jp": "エーフィ",   "name_es": "Espeon",  "generation": 2, "is_baby": false, "is_legendary": false },
+  { "id": 197, "name_en": "Umbreon",   "name_jp": "ブラッキー",   "name_es": "Umbreon",   "generation": 2, "is_baby": false, "is_legendary": false },
+  { "id": 470, "name_en": "Leafeon",   "name_jp": "リーフィア",   "name_es": "Leafeon",   "generation": 4, "is_baby": false, "is_legendary": false },
+  { "id": 471, "name_en": "Glaceon",   "name_jp": "グレイシア",   "name_es": "Glaceon",   "generation": 4, "is_baby": false, "is_legendary": false },
+
+  { "id": 172, "name_en": "Pichu",     "name_jp": "ピチュー",     "name_es": "Pichu",     "generation": 2, "is_baby": true,  "is_legendary": false },
+  { "id": 25,  "name_en": "Pikachu",   "name_jp": "ピカチュウ",   "name_es": "Pikachu",   "generation": 1, "is_baby": false, "is_legendary": false },
+  { "id": 26,  "name_en": "Raichu",    "name_jp": "ライチュウ",   "name_es": "Raichu",    "generation": 1, "is_baby": false, "is_legendary": false },
+
+  { "id": 150, "name_en": "Mewtwo",    "name_jp": "ミュウツー",   "name_es": "Mewtwo",    "generation": 1, "is_baby": false, "is_legendary": true },
+
+  { "id": 386, "name_en": "Deoxys",    "name_jp": "デオキシス",   "name_es": "Deoxys",    "generation": 3, "is_baby": false, "is_legendary": true },
+
+  { "id": 479, "name_en": "Rotom",     "name_jp": "ロトム",       "name_es": "Rotom",     "generation": 4, "is_baby": false, "is_legendary": false },
+
+  { "id": 493, "name_en": "Arceus",    "name_jp": "アルセウス",   "name_es": "Arceus",    "generation": 4, "is_baby": false, "is_legendary": true }
+]

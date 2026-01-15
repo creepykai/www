@@ -1,0 +1,79 @@
+# Guía del MVC: La Analogía del Restaurante 🍽️
+
+Imagínate que esta aplicación web es un **Restaurante**. Tú eres el cliente que viene a comer. Vamos a ver quién es quién en este equipo.
+
+---
+
+## 1. El Recepcionista: `index.php` 🛎️
+**"¿Qué desea usted hacer hoy?"**
+
+Cuando entras al restaurante (la web), lo primero que te encuentras es al Recepcionista (`index.php`).
+Su trabajo es muy simple:
+1.  Te saluda.
+2.  Mira tu "orden" (la URL).
+    *   ¿Dices `?action=poke`? -> "Ah, quiere ver un Pokémon".
+    *   ¿No dices nada? -> "Ah, le llevaré a la sala principal".
+3.  Llama al **Camarero** adecuado (el Controlador) para que te atienda.
+
+**En el código:**
+> `index.php` lee la variable `$_GET['action']` y decide qué función del Controlador ejecutar.
+
+---
+
+## 2. El Jefe de Camareros: `BasicPokemonController.php` 🤵
+**"¡Oído cocina! Yo me encargo de todo."**
+
+Este es el coordinador. No cocina (no toca la base de datos) y no decora los platos (no escribe HTML). Su trabajo es **mandar** a los demás.
+Cuando `index.php` le avisa ("¡Mesa 4 quiere a Pikachu!"), el Controlador hace esto:
+1.  **Grita a la Cocina (Modelo)**: "¡Necesito los datos de Pikachu (ID 25)!".
+2.  Espera a recibir los ingredientes (datos).
+3.  **Se los lleva al Decorador (Vista)**: "Toma estos datos de Pikachu, pónmelos bonitos en un plato (HTML)".
+4.  Coge el plato terminado y te lo sirve.
+
+**En el código:**
+> Mira la función `poke()`. Llama a `$m->get_poke_data()` (Modelo) y luego hace `$v->table()` (Vista).
+
+---
+
+## 3. La Despensa / El Cocinero: `Models/` 🥕
+**"Aquí están los ingredientes frescos."**
+
+El Modelo es el único que sabe dónde está la comida. Al Camarero (Controlador) no le importa si los ingredientes vienen del supermercado, del huerto o de una lata.
+En este proyecto tienes dos "proveedores":
+*   **`BasicPokemonJsonModel.php`**: Saca los datos de un papelito (fichero de texto JSON).
+*   **`BasicPokemonBdModel.php`**: Saca los datos de un almacén gigante (Base de Datos).
+
+Lo mágico es que si mañana cambias de proveedor, ¡el Camarero ni se entera! Él solo pide "Datos de Pikachu" y el Modelo se los da.
+
+**En el código:**
+> Funciones como `get_poke_data($id)`. Hacen el trabajo sucio de leer ficheros o conectar a MySQL y devuelven datos limpios (arrays).
+
+---
+
+## 4. El Decorador de Platos: `views/BasicView.php` 🎨
+**"La comida entra por los ojos."**
+
+La Vista no cocina. La Vista no sabe si la carne es de ternera o pollo. Solo sabe que le han dado "algo" y tiene que hacer que se vea bonito.
+Su trabajo es generar el código HTML (las etiquetas `<table>`, `<h1>`, etc.) para que tú (el cliente) lo veas bien en tu navegador.
+
+**En el código:**
+> Funciones como `table($data)`. Cogen los datos crudos y los envuelven en etiquetas HTML (`<tr><td>...</td></tr>`).
+
+---
+
+## Resumen del Viaje (Ejemplo Real) 🚀
+
+Imagina que escribes en tu navegador:
+`index.php?action=poke&id=6` (Charizard)
+
+1.  **TÚ** llegas a la puerta.
+2.  **`index.php` (Recepción)** ve `action=poke`. Dice: "¡Controlador, atiende la petición 'poke'!".
+3.  **`BasicPokemonController` (Camarero)** se despierta. Ve `id=6`.
+    *   Va al **Modelo**: "¿Tienes datos del #6?".
+    *   **Modelo**: Busca en el archivo JSON. "Toma, aquí están (Fuego, Volador...)".
+    *   El Camarero va a la **Vista**: "Toma estos datos, píntame una ficha".
+    *   **Vista**: Crea el HTML con la foto y los textos. Se lo da al Camarero.
+4.  **`BasicPokemonController`** recibe el HTML final y te lo entrega.
+5.  **TÚ** ves a Charizard en tu pantalla.
+
+¡Y eso es el MVC! Separar tareas para que si se quema la cocina (falla la BBDD), no tengas que volver a pintar las paredes del restaurante (cambiar el HTML).

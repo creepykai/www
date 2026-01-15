@@ -1,0 +1,63 @@
+html,body {
+	margin:0;
+	padding:0;
+}
+body {
+	font: 76% arial,sans-serif;
+}
+p {
+	margin:0 10px 10px;
+}
+label,button {
+	display:block;
+}
+a:link,a:visited,a:hover,a:active {
+	padding: 0px;
+	font-style: italic;
+	text-decoration: none;
+	color: #000000;
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid;
+	text-align: center;
+	border-spacing: 1px;
+	border-collapse: collapse;
+}
+tr.list_header {
+	background-color:#888;
+	color:white
+}
+	
+tr.list_even {
+	background-color:#DDD;
+}
+th, td { 
+	padding: 0px;
+	border: 1px solid;
+}
+
+input, select, button {
+	font-size: 10px;
+}
+
+main header {
+	background-color:#F3F2ED;
+}
+main header h1 {
+	height:50px;
+	line-height:50px;
+	margin:0;
+	text-align: center;
+}
+
+footer {
+	background:#BFBD93;
+	clear:left;
+	width:100%;
+}
+footer p {
+	margin:0;
+	padding:5px 10px;
+}
