@@ -1,0 +1,14 @@
+No se pueden usar supresores de errores
+No se pueden utilizar la funcion PHP header() ni la construconstrucción del lenguaje list()
+No se pueden usar controles ocultos, cookies, ni sesiones
+No se puede utilizar el método POST, hay que utilizar GET
+
+Se debe utilizas MVC utilizando la clase ovniModel adjunta como modelo, que incluye métodos para obetener todos los años. la información
+de un elemento dado su identificador, y los nombres de los campos.
+No se puede modificar la clase ovniModel, incluida en models/ovniModel.php.
+
+Diseña una clase ovniView que permita generar todo el código de presentación y utilizalo junto al modelo y una nueva clase ovniController que haga de controlador en la aplicación. Estas clases solo pueden contener métodos que sean utilizados en la aplicación.
+
+La aplicación podrá realizar dos acciones:
+1. La acción general mostrara un desplegable con todos los casos y un boton que lleve a la acción Datos
+2. La acción Datos mostrara todos los datos de un elemento dado en forma de lista HTML con los nombres de sus campos, además del formulario de la acción inicial.
