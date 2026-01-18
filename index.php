@@ -1,4 +1,4 @@
 <?php
-$msg = "Hola mundo";
+$msg = "Hola mundo HOLA MUNDO";
 echo $msg;
 //phpinfo();
